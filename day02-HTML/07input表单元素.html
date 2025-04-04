@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>input表单元素</title>
+</head>
+
+<body>
+    <form action="www.xxx.php" method="get">
+        用户名：<input type="text" name="username" value="请输入用户名" maxlength="6"><br />
+        <!-- type属性可以让input表单元素设置不同的形态 -->
+        <!-- text文本框 用户可以输入任何文字 maxlength用户输入最大字符数（少用）-->
+        <!-- value规定input元素的值（表格中你输入的数据更改的就是value里面的值，提交form就是把value提交出去） -->
+        密码：<input type="password" name="password"><br />
+        <!-- password密码框 不显示数字 -->
+        性别：男 <input type="radio" name="sex" value="男"> 女<input type="radio" name="sex" value="女" checked="checked">
+        <br />
+        <!-- radio单选按钮 可以实现多选 -->
+        <!-- name是表单元素名字 这里性别单选按钮必须有相同名字name 才可以实现多选一 -->
+        <!-- checked规定input元素首次加载时应当被选中 -->
+        <!-- 单选按钮和复选框可以设置checked属性，当页面打开的时候就可以默认选中这个按钮 -->
+        爱好：吃饭 <input type="checkbox" name="hobby" value="吃饭"> 睡觉 <input type="checkbox" name="hobby" value="睡觉"> 打豆豆
+        <input type="checkbox" name="hobby" value="打豆豆" checked="checked"><br />
+        <!-- checkbox复选框 可以实现多选 -->
+        <!-- name和value是每个表单元素的属性值，主要给后台人员使用 -->
+        <input type="submit" value="免费注册">
+        <!-- 点击率提交按钮，可以把 表单域form里面的元素 里面的值 提交给后台服务器 -->
+        <input type="reset" value="重新填写">
+        <!-- 重置按钮可以还原表单初始元素的默认元素 -->
+        <input type="button" value="获取短信验证码"><br />
+        <!-- button普通按钮 后期结合javascript使用 -->
+        上传头像: <input type="file">
+        <!-- file文件域 使用场景 上传文件时使用 -->
+    </form>
+</body>
+
+</html>

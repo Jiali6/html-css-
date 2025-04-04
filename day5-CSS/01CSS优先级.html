@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS优先级</title>
+    <!-- 选择器相同则执行层叠性 选择器不同则根据选择器权重执行 -->
+    <!-- ！important无限>行内样式style 1,0,0,0>ID0,1,0,0>class 0,0,1,0 :hover :active>标签0,0,0,1>* 0,0,0,0-->
+    <style>
+        div {
+            color: pink !important;
+        }
+
+        .test {
+            color: aqua;
+        }
+
+        #demo {
+            color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test" id="demo" style="color:blueviolet">你笑起来真好看</div>
+</body>
+
+</html>

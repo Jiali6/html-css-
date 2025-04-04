@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex布局父项常见属性</title>
+    <!-- 以下由6个属性是对父元素设置的 -->
+    <!-- 1、flex-direction:设置主轴的方向
+         a、在flex布局中，是分为主轴和侧轴的，同样的叫法有：行和列、x轴和y轴、水平和垂直
+              主轴:主轴是flex布局的主方向，默认是水平方向，x轴方向，水平向右
+              侧轴:侧轴是与主轴垂直的方向，默认是垂直方向，y轴方向，垂直向下
+         b、flex-direction的属性值有：
+                1、row:主轴为水平方向，起点在左端，👉默认值
+                2、row-reverse:主轴为水平方向，起点在右端👈
+                3、column:主轴为垂直方向，起点在上沿👇
+                4、column-reverse:主轴为垂直方向，起点在下沿 👆       
+        我们可以把主轴设为y轴 那么x轴就是侧轴了 flex-direction:column
+        ***主轴和侧轴是会变化的，就看dlex-direction设置谁为主轴，剩下的就是侧轴
+        子元素的排列方向是由主轴决定的 -->
+    <!-- 2、justify-content:设置主轴上的子元素排列方式 
+            1、flex-start 默认值 从头部开始 如果主轴是x轴，则从左到右👉
+            2、flex-end 从尾部开始 如果主轴是x轴，则从右到左👈
+            3、center 在主轴居中对齐
+            4、space-around 平分剩余空间
+            5、space-between 先两边贴边 再平分剩余空间（重要）
+            -->
+    <!-- 3、flex-wrap:设置子元素是否换行 -->
+    <!-- 4、align-content:设置侧轴上的子元素的排列方式(多行) -->
+    <!-- 5、align-items:设置侧轴上的子元素排列方式(单行) -->
+    <!-- 6、flex-flow:复合属性，相当于同时设置了flex-direction和 flex-wrap -->
+
+</head>
+
+<body>
+
+</body>
+
+</html>
