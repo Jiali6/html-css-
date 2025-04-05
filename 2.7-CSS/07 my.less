@@ -1,0 +1,22 @@
+// 变量命名规范：必须以@开头
+// 变量名可以包含字母、数字和下划线
+// 变量名不能以数字开头
+// 变量名不能包含空格
+// 变量名不能包含特殊字符
+// 变量名不能包含中文和中文字符
+// 大小写敏感
+
+// 定义一个粉色的变量
+@color: pink;
+// 定义一个字体为14px的变量
+@font14: 14px;
+body {
+    background-color: @color;
+}
+div {
+    color: @color;
+    font-family: @font14;
+}
+a {
+    font-size: @font14;
+}

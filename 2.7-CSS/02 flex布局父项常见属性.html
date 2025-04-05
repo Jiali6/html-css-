@@ -25,10 +25,27 @@
             4、space-around 平分剩余空间
             5、space-between 先两边贴边 再平分剩余空间（重要）
             -->
-    <!-- 3、flex-wrap:设置子元素是否换行 -->
-    <!-- 4、align-content:设置侧轴上的子元素的排列方式(多行) -->
-    <!-- 5、align-items:设置侧轴上的子元素排列方式(单行) -->
-    <!-- 6、flex-flow:复合属性，相当于同时设置了flex-direction和 flex-wrap -->
+    <!-- 3、flex-wrap:设置子元素是否换行 
+            在flex布局中，子元素默认是单行排列的，如果子元素的宽度超过了父盒子的宽度，子元素会被压缩到一行中
+            1、nowrap 默认值 不换行
+            2、wrap 换行
+            -->
+    <!-- 4、align-content:设置侧轴上的子元素的排列方式(多行使用，只能用于子项出现<换行 flex-wrap: wrap;>的情况)
+            1、flex-start 默认值 在侧轴的头部开始排列
+            2、flex-end 在侧轴的尾部开始排列
+            3、center 在侧轴居中对齐
+            4、space-around 子项在侧轴平分剩余空间
+            5、space-between 子项在侧轴先分布在两头 再平分剩余空间
+            6、stretch 设置子项元素高度平分父元素高度
+             -->
+    <!-- 5、align-items:设置侧轴上的子元素排列方式(单行使用)
+            1、flex-start 从上到下
+            2、flex-end 从下到上
+            3、center 挤在一起垂直居中 
+            4、stretch 拉伸（默认值） 但是子盒子不要给高度 -->
+    <!-- 6、flex-flow:复合属性，相当于同时设置了flex-direction和 flex-wrap 
+            设置主轴方向和是否换行（换列）简写
+            eg: flex-flow:row wrap;-->
 
 </head>
 
