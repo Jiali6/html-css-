@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //打印五句话
+    // let i = 1
+    // while (i <= 5) {
+    //   if (i === 3) {
+    //     break //退出整个循环 一般用于结果已经得到，后续的循环不需要的时候
+    //   }
+    //   console.log(`我要吃第${i}个包子`)
+    //   i++
+    // }
+    let i = 1
+    while (i <= 5) {
+      if (i === 3) {
+        i++
+        continue //结束本次循环 一般用于排除或者跳过某一个选项
+      }
+      console.log(`我要吃第${i}个包子`)
+      i++
+    }
+  </script>
+</body>
+
+</html>

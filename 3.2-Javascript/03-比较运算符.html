@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    console.log(3 > 5); //false
+    console.log(3 >= 3); //true
+    console.log(2 == 2); //true
+    //比较运算符有隐式转换 把‘2’转换为2
+    console.log(2 == '2'); //true
+    //===全等 判断 值 和 数据类型都一样才行
+    //*以后判断是否相等 用===
+    console.log(2 === '2'); //false 
+    //NaN 不等于任何人，包括他自己  涉及到NaN都是false
+    console.log(NaN === NaN); //false
+    console.log(2 !== '2'); //true
+    //了解
+    //字符串比较，是比较的字符对应的ASCII码
+    //从左往右依次比较
+    console.log('-----------------------');
+    console.log('a' < 'b'); //true
+    console.log('aa' < 'bb'); //true
+    console.log('aa' < 'aac'); //true
+    console.log('-----------------------');
+  </script>
+</body>
+
+</html>

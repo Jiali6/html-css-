@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let num = 10
+    //num = num + 1
+    //num +=1
+    // //1.前置自增
+    // let i = 1
+    //   ++i  每执行一次，当前变量数值加1
+    // console.log(i);
+    //前置自增 先自加再使用  （++在前 先加）
+    // let i = 1
+    // console.log(++i +1)  //3
+
+    //2.后置自增 
+    // let i = 1
+    // i++ //每执行一次，当前变量数值加1
+    // console.log(i);
+    //后置自增先使用再自加 （++在后 后加）
+    // let i = 1
+    // console.log(i++ + 1) //2
+
+    //了解
+    let i = 1
+    console.log(i++ + ++i + i) // (1) + (1+2=3) + (3) = 7
+
+
+    //前置自增和后置自增独立使用时二者并没有差别
+    //一般在开发中我们都是独立使用
+    //后面i++后置自增会使用相对较多，并且都是单独使用
+  </script>
+</body>
+
+</html>
