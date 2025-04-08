@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //冒泡排序
+    // let arr = [5, 4, 3, 2, 1]
+    // for (let i = 0; i < arr.length - 1; i++) {
+    //   for (let j = 0; j < arr.length - i - 1; j++) {
+    //     //开始交换 但是前提 第一个数大于第二个数才交换
+    //     if (arr[j] > arr[j + 1]) {
+    //       //交换两个变量
+    //       let temp = arr[j]
+    //       arr[j] = arr[j + 1]
+    //       arr[j + 1] = temp
+    //     }
+    //   }
+    // }
+    // console.log(arr);
+
+    let arr = [5, 2, 3, 4, 1]
+    // arr.sort() //排序  默认升序
+    //sort 升序排列
+    // arr.sort(function (a, b) {
+    //   return a - b
+    // })
+    arr.sort(function (a, b) {
+      return b - a
+    })
+    console.log(arr);
+  </script>
+</body>
+
+</html>

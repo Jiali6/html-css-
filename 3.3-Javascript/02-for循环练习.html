@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //1.输出1～100岁
+    // for (let i = 1; i <= 100; i++) {
+    //   document.write(`今年我${i}岁了<br/>`)
+    // }
+    //2.求1～100之间的偶数和
+    // let sum = 0
+    // for (let i = 1; i <= 100; i++) {
+    //   if (i % 2 === 0) {
+    //     //把i加到sum里面去
+    //     sum += i
+    //   }
+    // }
+    // document.write(`1～100之间的偶数和是:${sum}`)
+    //3.页面打印五个小星星
+    // for (let i = 1; i <= 5; i++) {
+    //   document.write('xing xing')
+    // }
+    //4.打印数组
+    let arr = ['胡图图', '胡英俊', '张小丽', '牛爷爷', '小美', '壮壮妈']
+    // console.log(arr[0]);
+    // console.log(arr[2]);
+    // console.log(arr[3]);
+    // console.log(arr[4]);
+    //i <= 4  长度-1 
+    // for (let i = 0; i <= arr.length - 1; i++) {
+    //   console.log(arr[i]);
+    // }
+    //必须从0 开始，因为数组索音号从0开始  arr.length = 6
+    //遍历数组 从第一个循环到最后一个
+    for (let i = 0; i < arr.length; i++) {
+      console.log(arr[i])
+    }
+  </script>
+</body>
+
+</html>

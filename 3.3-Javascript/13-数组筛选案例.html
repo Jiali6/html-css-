@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //重点案例
+    let arr = [2, 0, 6, 11, 44, 65, 78, 3, 7, 5]
+    //1.声明新数组
+    let newArray = []
+    // 2.遍历旧数组
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > 10) {
+        //3.满足条件追加给新数组
+        newArray.push(arr[i])
+      }
+    }
+    //4.输出新数组
+    console.log(newArray);
+  </script>
+</body>
+
+</html>
