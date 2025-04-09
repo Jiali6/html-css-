@@ -9,20 +9,33 @@
 
 <body>
   <script>
-    let num = 20
+    // let num = 20
+
+    // function fn() {
+    //   num = 10 //全局变量来看 强烈不允许
+    // }
+    // fn()
+    // console.log(num);
+
+    // function fun(x, y) {
+    //   //行参可以看作是函数的局部变量
+    //   console.log(x);
+    // }
+    // fun(1, 2)
+    // console.log(x); //错误的
+
+
+    let num = 10
 
     function fn() {
-      num = 10 //全局变量来看 强烈不允许
+      let num = 20
+
+      function fun() {
+        let num = 30
+        console.log(num); //就近原则 先局部后整体
+      }
     }
     fn()
-    console.log(num);
-
-    function fun(x, y) {
-      //行参可以看作是函数的局部变量
-      console.log(x);
-    }
-    fun(1, 2)
-    console.log(x);
   </script>
 </body>
 
