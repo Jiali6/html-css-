@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // function getSum(x, y) {
+    //   return x + y
+    //   //返回值返给了谁？ 函数的调用者  getSum（1，2）
+    //   //getSum(1, 2) =3
+    // }
+    // // let result = getSum(1, 2) = 3
+    // let result = getSum(1, 2)
+    // console.log(result);
+
+    //1.两个相同函数后面的会覆盖前面的函数
+    function fn() {}
+    console.log(1);
+
+    function fn() {}
+    console.log(2);
+    fn()
+    //2.参数不匹配
+    function fn(a, b) {
+      console.log(a + b);
+    }
+    //1)实参多于行参 剩余的实参不参与运算
+    // fn(1,2,3)
+    //1)实参少于行参 
+    fn() //1 + undefined = NaN
+  </script>
+</body>
+
+</html>
