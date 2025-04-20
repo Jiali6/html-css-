@@ -7,5 +7,7 @@
 			"path": "../../../Desktop/素材"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "web-2025"
+	}
 }
