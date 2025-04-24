@@ -1,9 +1,10 @@
 {
-	"folders": [
-		{
+	"folders": [{
+			"name": "web-2025",
 			"path": ".."
 		},
 		{
+			"name": "素材",
 			"path": "../../../Desktop/素材"
 		}
 	],
