@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //元字符
+    console.log(/哈/.test('哈')); //true
+    console.log(/哈/.test('哈哈')); //true
+    console.log(/哈/.test('二哈')); //true
+    //1.边界符
+    console.log(/^哈/.test('哈')); //true
+    console.log(/^哈/.test('哈哈')); //true
+    console.log(/^哈/.test('二哈')); //false
+
+    console.log(/^哈$/.test('哈')); //true 精确匹配 只有这种情况是true 否则全是false
+    console.log(/^哈$/.test('哈哈')); //false  
+    console.log(/^哈$/.test('二哈')); //false
+
+    //量词* 类似>=0 次
+    console.log(/^ha*$/.test('ha')); //true
+    console.log(/^ha*$/.test('')); //true
+    console.log(/^ha*$/.test('haha')); //true
+    console.log(/^ha*$/.test('hahaha')); //true
+    console.log(/^ha*$/.test('erha')); //false
+    console.log(/^ha*$/.test('hahenha')); //false
+    console.log(/^ha*$/.test('hahenchun')); //false
+
+    //量词+ 类似>=1 次
+    console.log(/^ha+$/.test('ha')); //true
+    console.log(/^ha+$/.test('')); //false
+    console.log(/^ha+$/.test('haha')); //true
+    console.log(/^ha+$/.test('hahaha')); //true
+    console.log(/^ha+$/.test('erha')); //false
+    console.log(/^ha+$/.test('hahenha')); //false
+    console.log(/^ha+$/.test('hahenchun')); //false
+
+    //量词? 类似 0 || 1
+    console.log(/^ha?$/.test('ha')); //true
+    console.log(/^ha?$/.test('')); //true
+    console.log(/^ha?$/.test('haha')); //false
+    console.log(/^ha?$/.test('hahaha')); //false
+    console.log(/^ha?$/.test('erha')); //false
+    console.log(/^ha?$/.test('hahenha')); //false
+    console.log(/^ha?$/.test('hahenchun')); //false
+
+    //量词{n} 写几 就必须出现几次
+    console.log(/^哈${4}/.test('哈')); //false
+    console.log(/^哈${4}/.test('哈哈')); //false
+    console.log(/^哈${4}/.test('哈哈哈')); //false
+    console.log(/^哈${4}/.test('哈哈哈哈')); //true
+    console.log(/^哈${4}/.test('哈哈哈哈哈')); //false
+
+    //量词{n,} >=n
+    console.log(/^哈${4,}/.test('哈')); //false
+    console.log(/^哈${4,}/.test('哈哈')); //false
+    console.log(/^哈${4,}/.test('哈哈哈')); //false
+    console.log(/^哈${4,}/.test('哈哈哈哈')); //true
+    console.log(/^哈${4,}/.test('哈哈哈哈哈')); //true
+
+    //量词{n,m} ，两侧千万不能有空格   >=n && <=m
+    console.log(/^哈${4,6}/.test('哈')); //false
+    console.log(/^哈${4,6}/.test('哈哈')); //false
+    console.log(/^哈${4,6}/.test('哈哈哈')); //false
+    console.log(/^哈${4,6}/.test('哈哈哈哈')); //true
+    console.log(/^哈${4,6}/.test('哈哈哈哈哈')); //true
+    console.log(/^哈${4,6}/.test('哈哈哈哈哈哈')); //true
+    console.log(/^哈${4,6}/.test('哈哈哈哈哈哈哈')); //false
+
+    //字符类 [abc] 只选一个
+    console.log(/^[abc]$/.test('a')); //true
+    console.log(/^[abc]$/.test('b')); //true
+    console.log(/^[abc]$/.test('c')); //true
+    console.log(/^[abc]$/.test('ab')); //false
+    console.log(/^[abc]{2}$/.test('ab')); //true
+
+    //字符类 [a-z] a到z只选一个
+    console.log(/^[a-z]$/.test('p')); //true
+    console.log(/^[A-Z]$/.test('P')); //true
+    console.log(/^[0-9]$/.test(2)); //true
+    console.log(/^[a-zA_Z0-9]$/.test(2)); //true
+    console.log(/^[a-zA_Z0-9]$/.test('P')); //true
+    console.log(/^[a-zA_Z0-9]$/.test('p')); //true
+  </script>
+</body>
+
+</html>

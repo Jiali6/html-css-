@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    for (let i = 1; i <= 3; i++) {
+      //块作用域
+      console.log(i); //正常
+    }
+    // console.log(i); //报错
+
+    for (let i = 1; i <= 3; i++) {
+      //块作用域
+      console.log(i); //正常
+    }
+
+    if (true) {
+      //块作用域
+      let i = 10
+      console.log(i); //正常
+    }
+    // console.log(i); //报错
+  </script>
+</body>
+
+</html>
