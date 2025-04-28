@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //对象解构
+    // const obj = {
+    //   uname: 'kitty',
+    //   age: 18
+    // }
+    //obj.uname
+    //obj.age
+
+    // const uname = 'baby'
+    //解构的语法
+    //const { } = { }
+    // const {
+    //   uname,
+    //   age
+    // } = {
+    //   uname: 'kitty',
+    //   age: 18
+    // }
+    // // 等价于const uname = obj.uname
+    // //属性名和变量名必须一致
+    // console.log(uname);
+    // console.log(age);
+
+    // 1. 对象解构的变量名 可以重新改名 旧变量名:新变量名
+    // const {
+    //   uname: username,
+    //   age
+    // } = {
+    //   uname: 'kitty',
+    //   age: 18
+    // }
+    // console.log(username);
+    // console.log(age);
+    // 2. 解构数组对象
+    const pig = [{
+      uname: 'peggy',
+      age: '5'
+    }]
+    const [{
+      uname,
+      age
+    }] = pig
+    console.log(uname);
+    console.log(age);
+  </script>
+</body>
+
+</html>
